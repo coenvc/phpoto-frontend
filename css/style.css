@@ -1,18 +1,40 @@
-.navbar-brand img {
-    width: 25%;
-    height: auto;
-}
 .navbar {
-  background: #1c1c1c;
+  background: black;
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 1px;
 }
 .navbar-nav {
   flex-direction: row;
   justify-content: center;
+}
+.logo {
+  width: auto;
+  height: 50px;
+}
+.login {
+  padding: 5px 20px 5px 5px;
+}
+.login a {
+  color: white;
 }
 .full-width-image {
   height: 400px;
   width: 100%;
   background: url("img/topimg.jpg") no-repeat center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logoimg {
+  width: 40%;
+  height: auto;
+}
+.search {
+  width: 35%;
+}
+.btn:hover {
+  cursor: pointer;
 }
 /* What up nanna */
