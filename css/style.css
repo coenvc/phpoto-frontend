@@ -1,0 +1,17 @@
+.navbar-brand img {
+    width: 25%;
+    height: auto;
+}
+.navbar {
+  background: #1c1c1c;
+}
+.navbar-nav {
+  flex-direction: row;
+  justify-content: center;
+}
+.full-width-image {
+  height: 400px;
+  width: 100%;
+  background: url("img/topimg.jpg") no-repeat center;
+  background-size: cover;
+}
