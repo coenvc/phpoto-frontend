@@ -30,6 +30,7 @@
 .logoimg {
   width: 40%;
   height: auto;
+  margin-top: -50px;
 }
 .searchform {
   width: 35%;
@@ -59,6 +60,7 @@
 }
 .mdl-button--fab.mdl-button--colored:hover {
   background: #C82333;
+  cursor: pointer;
 }
 .mdl-button:focus {
   outline: none;
@@ -190,7 +192,7 @@ footer div.copyright{
   }
 }
 
-.fa {
+.footer-social .fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
