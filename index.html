@@ -4,11 +4,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://use.fontawesome.com/c7fb7c17ca.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
         <title>Photo Upload</title>
         <META charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
       <nav class="navbar navbar-inverse">
@@ -29,7 +34,16 @@
         <!-- Page Content -->
     <div class="container-fluid full-width-image margins">
       <img class="logoimg" src="img/photoupload.png"/>
-      <input type="text" class="form-control search" id="usr" placeholder="Search.." autofocus>
+      <form class="searchform">
+        <div class="input-group">
+          <input type="text" class="form-control search" placeholder="Search.." autofocus>
+          <div class="input-group-btn">
+            <button class="btn btn-default searchbtn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
     </div>
     <div class="container">
@@ -103,10 +117,15 @@
           </div>
 
         </div>
+
+        <!-- Colored FAB button -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button>
         
         <footer id="footer">
           <div class="row">
-            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4">col-sm.-4</div>
             <div class="col-sm-4">.col-sm-4</div>
             <div class="col-sm-4">.col-sm-4</div>
           </div>

@@ -1,6 +1,6 @@
 .navbar {
   background: black;
-  font-family: 'Reem Kufi', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
 .navbar-nav {
@@ -22,7 +22,6 @@
   width: 100%;
   background: url("img/topimg.jpg") no-repeat center;
   background-size: cover;
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +31,38 @@
   width: 40%;
   height: auto;
 }
-.search {
+.searchform {
   width: 35%;
+}
+.search {
+  width: 60%;
+  border: 1px solid lightgray;
+  padding: 15px;
+
+}
+.searchbtn {
+  color: white;
+  background: #8CC2EA;
+  padding: 15px;
 }
 .btn:hover {
   cursor: pointer;
-=======
 } 
+.mdl-button {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  outline: none;
+}
+.mdl-button--fab.mdl-button--colored {
+  background: #dc3545;
+}
+.mdl-button--fab.mdl-button--colored:hover {
+  background: #C82333;
+}
+.mdl-button:focus {
+  outline: none;
+}
 
 .test{
   display: none;
@@ -53,5 +77,4 @@ footer div.row div.col-sm-4{
 
 footer div.copyright{
   text-align: center;
->>>>>>> 94a08db3e1add9ff0cd0ad3a3ac0d4e426fc6468
 }
