@@ -14,5 +14,9 @@
   width: 100%;
   background: url("img/topimg.jpg") no-repeat center;
   background-size: cover;
+} 
+
+.test{
+  display: none;
 }
-/* What up nanna */
+/* What up  */
