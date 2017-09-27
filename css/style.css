@@ -182,11 +182,11 @@ padding-top: 25px;
 }
 
 .form-signin {
-  max-width: 380px;
+  min-width:400px;
   padding: 15px 35px 45px;
   margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);  
+  background-color: rgba(225,225,225,0.8);
+  border-radius: 14px;
 
   .form-signin-heading,
 	.checkbox {
@@ -223,14 +223,58 @@ padding-top: 25px;
 }
 .password {
   margin-bottom: 20px;
+  border-radius: 25px;
 }
 .username {
   margin-bottom: 20px;
+  border-radius: 25px;
 }
 .signup {
 
   justify-content: center;
   align-items: center;
+}
+
+.btn-block{
+  border-radius: 25px;
+}
+
+form.form-signin>div.signup{
+  padding-top: 7px;
+}
+
+form.form-signin>div.signup>p{
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 70%;
+  display: inline-block;
+}
+
+form.form-signin>div.signup>a{
+  color: #1c1c1c;
+  font-size: 14px;
+  text-align: right;
+  display: inline-block;
+  max-width: 30%;
+  float: right;
+  padding-top: 2px;
+}
+
+
+.full-width-image .login{
+  height: 140vh;
+  width: 100%;
+  background: url("img/topimg2.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form.form-signin>.btn-primary{
+  background-color:#8CC2EA;
+  border-color:#8CC2EA;
 }
 
 /* /LOGIN PAGE */
