@@ -249,7 +249,7 @@ padding-top: 25px;
   opacity: 80;
 }
 
-.row.text-center.text-lg-left>div:hover .hover-box{
+.grid>div:hover .hover-box{
   display : block;
 }
 
