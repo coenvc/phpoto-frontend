@@ -12,6 +12,8 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>  
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>  
         <title>Photo Upload</title>
         <META charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +30,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="login"><a href="login.html">Login</a></li>
-      <li><a href="#"><button class="btn btn-danger navbar-btn">Sign up</button></a></li>
+      <li><a href="signup.html"><button class="btn btn-danger btn-lg navbar-btn">Sign up</button></a></li>
     </ul>
   </div>
 </nav>
@@ -45,74 +47,83 @@
           </div>
         </div>
       </form>
+        <div class="down">
+          <a href="#topimg"><p><i class="fa fa-angle-down" aria-hidden="true"></i></p></a>
+        </div>
     </div>
     </div>
+    <span id="topimg"></span>
     <div class="container">
-      <div class="row text-center topimg">
+      <div class="row text-center topimg" >
         <h1></h1>
       </div>
-          <h1 class="my-4 text-center text-lg-left"></h1>
+          <div class="button-group filter-button-group">
+              <button class="btn btn-primary btn-lg filterbtn" data-filter="*"><i class="fa fa-asterisk" aria-hidden="true"></i> Show all</button>
+              <button class="btn btn-primary btn-lg filterbtn" data-filter=".people"><i class="fa fa-male" aria-hidden="true"></i> People</button>
+              <button class="btn btn-primary btn-lg filterbtn" data-filter=".nature"><i class="fa fa-pagelines" aria-hidden="true"></i> Natue</button>
+              <button class="btn btn-primary btn-lg filterbtn" data-filter=".urban"><i class="fa fa-building-o" aria-hidden="true"></i> Urban</button>
+            </div>
 
-          <div class="row text-center text-lg-left">
+          <div class="row text-center text-lg-left grid">
 
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 nature grid-item">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/1.jpg" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 urban">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/2.jpg" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 people">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/12.png" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 urban">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/10.png" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 people urban">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/13.png" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 nature">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/1.jpg" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 people">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/2.jpg" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 people" >
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/4.jpg" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 urban">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/13.png" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 nature">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/10.png" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 people">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/10.png" alt="">
               </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-4 col-md-4 col-xs-6 nature">
               <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                <img class="img-fluid img-thumbnail" src="img/2.jpg" alt="">
               </a>
             </div>
           </div>
@@ -120,7 +131,7 @@
         </div>
 
         <!-- Colored FAB button -->
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" data-toggle="modal" data-target="#exampleModal">
           <i class="material-icons">add</i>
         </button>
         
@@ -155,10 +166,86 @@
                 
           </footer>
          
-      </div>
-  
+      </div>  
           <!-- /.container -->
-
-
+   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="file-loading">
+            <input id="input-b9" name="input-b9[]" multiple type="file">
+          </div>
+          <div id="kartik-file-errors"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" title="Your custom upload logic">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
     </body>
+    <script>
+        $(document).on('ready', function() {
+            $("#input-b9").fileinput({
+                showPreview: false,
+                showUpload: false,
+                elErrorContainer: '#kartik-file-errors',
+                allowedFileExtensions: ["jpg", "png", "gif"]
+                //uploadUrl: '/site/file-upload-single'
+            });
+        });
+        </script>
+        <script>
+          $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+        </script>
+    <script>
+    // init Isotope
+var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+    </script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
 </html>
