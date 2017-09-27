@@ -1,5 +1,6 @@
 body {
   background: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar {
   background: black;
@@ -286,6 +287,9 @@ form.form-signin>.btn-primary{
 /* /FILE UPLOAD */
 
 /* IMAGE GRID */
+.grid {
+  margin-bottom: 60px;
+}
 .img-thumbnail {
   padding:0;
   border:0;
@@ -349,4 +353,10 @@ form.form-signin>.btn-primary{
   position: absolute;
   bottom: 25px;
   right: 20px;
+}
+.imgtitle {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  Color: black;
 }
