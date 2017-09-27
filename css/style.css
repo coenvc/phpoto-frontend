@@ -170,8 +170,8 @@ footer div.copyright{
   border-radius: 50%;
 }
 
-.footer-nav>p{
-padding-top: 25px;
+.footer-nav>p, .footer-brand>p{
+padding-top: 18px;
 }
 
 
@@ -296,7 +296,7 @@ form.form-signin>.btn-primary{
 .hover-box{
   display: none;
   background-color: white;
-  opacity: 80;
+  opacity: 0.9;
 }
 
 .grid>div:hover .hover-box{
@@ -313,7 +313,7 @@ form.form-signin>.btn-primary{
 
 .hover-box p{
   color:#3c3d41;
-  padding:5px 0px 5px 10px;
+  padding:5px 10px 5px 10px;
 }
 
 .fa-heart{
