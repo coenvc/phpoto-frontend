@@ -105,7 +105,7 @@ body {
 .filter-button-group {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 .filterbtn {
   margin: 10px;
@@ -137,7 +137,7 @@ footer div.copyright{
 }
 
 .footer {
-  background-color: #3c3d41; 
+  background-color: black; 
   padding: 30px 20px; 
   color: rgba(255,255,255,1.00);
 }
@@ -234,6 +234,12 @@ padding-top: 25px;
 }
 
 /* /LOGIN PAGE */
+/* FILE UPLOAD */
+.file-loading input[type=file], input[type=file].file-loading {
+  width: 300px !important;
+  height: auto !important;
+}
+/* /FILE UPLOAD */
 
 /* IMAGE GRID */
 .img-thumbnail {
@@ -292,3 +298,11 @@ padding-top: 25px;
   display: block;
 }
 
+.hover-box2 {
+  background-color: rgba(255, 255, 255, 0);
+}
+.likebtn {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
